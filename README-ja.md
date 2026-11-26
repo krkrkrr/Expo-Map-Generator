@@ -5,7 +5,8 @@
 ## Why
 
 展示会の会場図は PDF で配られる。検索も、ブースへの印付けも、スマホでのメモもできない。
-「この会場図 PDF を見て、良い感じのマップを作って」と頼むと、`expo-map-factory` スキルが選択式の質問を最大 4 問だけしてから、自律でマップを作る。
+「この会場図 PDF を見て、良い感じのマップを作って」と頼むと、`expo-map-factory` スキルが途中で質問せずに、自律でマップを作る。
+前提は固定している: これから回る展示会のため、本人 1 人が、HTML ファイルを開いて使う。ジャンル分けはスキルが出展説明から決め、現在地（GPS）とホスティングは扱わない。
 出展者を主催者の会場図そのものの上に配置し、自動のゲートと抜き取りの目視検査で結果を確かめる。
 
 プラグイン名は `oneshot-factory` で、次のスキルを含む。
@@ -13,10 +14,7 @@
 | スキル | 役割 |
 |---|---|
 | `expo-map-factory` | 会場図 PDF → 会場マップ（検索、お気に入り、訪問済み、メモ、オフライン、スマホ対応） |
-| `oneshot-factory` | 「1 回の入力 → 検証済みの動く成果物」を自律で作る汎用の流れ。`expo-map-factory` はこれの特化版 |
-| `ddd-bdd-tdd-flow`、`external-api-tos-check`、`unresolved-questions`、`okf-open-knowledge-format`、`playwright-test`、`adr-writing-ja` | 同梱した前提スキル（それぞれ自身の LICENSE を保持） |
-
-`adr-writing-ja` のライセンスは CC BY-NC-SA 4.0（非営利の利用に限る）。
+| `external-api-tos-check`、`unresolved-questions`、`playwright-test` | `expo-map-factory` が使う同梱スキル（それぞれ自身の LICENSE を保持） |
 
 ## Install
 

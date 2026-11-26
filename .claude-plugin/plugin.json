@@ -1,7 +1,7 @@
 {
   "name": "oneshot-factory",
-  "version": "0.2.0",
-  "description": "非エンジニアの1回の入力から、検証済みの動く成果物までを自律で作る factory。汎用の oneshot-factory と、会場図 PDF から展示会の会場マップ（HTML 1 ファイル）を作る expo-map-factory を含む。前提の ddd-bdd-tdd-flow などのスキルも同梱。",
+  "version": "0.3.0",
+  "description": "会場図 PDF から、展示会の会場マップ（HTML 1 ファイル）を途中で質問せずに自律で作る expo-map-factory と、その前提スキル（external-api-tos-check、unresolved-questions、playwright-test）を含む。",
   "author": {
     "name": "krkrkrr"
   },
@@ -11,9 +11,6 @@
   "keywords": [
     "factory",
     "autonomous",
-    "ddd",
-    "bdd",
-    "tdd",
     "map",
     "exhibition",
     "floor-map"

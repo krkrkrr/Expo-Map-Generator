@@ -4,17 +4,14 @@ A Claude Code plugin that turns an exhibition floor-plan PDF into a searchable, 
 
 ## Why
 
-Exhibition floor plans are PDFs: you cannot search them, mark booths, or keep notes on a phone. Say "look at this floor-plan PDF and make a nice map", and the `expo-map-factory` skill asks up to four multiple-choice questions, then builds the map on its own. It places every exhibitor on the organizer's own floor plan and checks the result with automated gates and a sampled visual audit.
+Exhibition floor plans are PDFs: you cannot search them, mark booths, or keep notes on a phone. Say "look at this floor-plan PDF and make a nice map", and the `expo-map-factory` skill builds the map on its own without asking questions along the way. Its assumptions are fixed: the map is for exhibitions you are about to visit, used by one person who opens an HTML file; the skill picks the genre breakdown from exhibitor descriptions, and does not do GPS location or hosting. It places every exhibitor on the organizer's own floor plan and checks the result with automated gates and a sampled visual audit.
 
 The plugin is named `oneshot-factory` and contains:
 
 | Skill | Role |
 |---|---|
 | `expo-map-factory` | Floor-plan PDF → venue map (search, favorites, visited marks, notes, offline, mobile) |
-| `oneshot-factory` | General autonomous "one input → verified working artifact" flow that `expo-map-factory` specializes |
-| `ddd-bdd-tdd-flow`, `external-api-tos-check`, `unresolved-questions`, `okf-open-knowledge-format`, `playwright-test`, `adr-writing-ja` | Bundled prerequisites (each keeps its own LICENSE) |
-
-`adr-writing-ja` is licensed CC BY-NC-SA 4.0 (non-commercial use only).
+| `external-api-tos-check`, `unresolved-questions`, `playwright-test` | Bundled skills used by `expo-map-factory` (each keeps its own LICENSE) |
 
 ## Install
 

@@ -8,7 +8,7 @@
     {
       "name": "oneshot-factory",
       "source": "./",
-      "description": "1回の入力から検証済みの成果物を自律で作る factory（汎用 + 会場マップ特化）。"
+      "description": "展示会の会場図 PDF から会場マップ（HTML 1 ファイル）を自律で作る factory。"
     }
   ]
 }

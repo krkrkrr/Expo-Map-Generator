@@ -83,6 +83,10 @@ def main():
     results["D8-zones"] = (not bad_zone, f"不正なゾーン: {bad_zone}" if bad_zone else "ok")
 
     th = D.get("theme")
+    text_only = all((e.get("map_note") or "").find("会場図の表記のみ") >= 0 for e in D.get("exhibitors", [])) \
+        if D.get("exhibitors") else False
+    if not th and not text_only:
+        results["D9-theme"] = (False, "theme がない（ジャンル分けは必須。会場図の表記のみで作ったときだけ省略可）")
     if th:
         gids = {g["id"] for g in th.get("genres", [])}
         badt = [k for k, v in (th.get("items") or {}).items()
