@@ -1,0 +1,14 @@
+{
+  "name": "expo-map-generator",
+  "description": "展示会の会場図から会場マップを作る factory などを配布するマーケットプレイス。",
+  "owner": {
+    "name": "krkrkrr"
+  },
+  "plugins": [
+    {
+      "name": "oneshot-factory",
+      "source": "./",
+      "description": "1回の入力から検証済みの成果物を自律で作る factory（汎用 + 会場マップ特化）。"
+    }
+  ]
+}
